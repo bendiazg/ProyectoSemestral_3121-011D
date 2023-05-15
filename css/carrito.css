@@ -1,0 +1,29 @@
+body {
+    background-color: #f7d3d3;
+  }
+  
+  h1 {
+    color: #bf1a1a;
+  }
+  
+  .cart {
+    margin-left: auto;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .add-to-cart {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: end;
+    padding: 20px;
+  }
