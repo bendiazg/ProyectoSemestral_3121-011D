@@ -61,6 +61,10 @@
   border: solid green 2px;
 }
 
+.dark .nav{
+  background: rgb(16, 43, 51);
+}
+
 .cart {
   border: 1px solid #ccc;
   padding: 10px;
@@ -77,14 +81,6 @@
   margin-top: 10px;
 }
 
-/*Fondo del body*/
-
-body {
-    background:url(bg.jpg);
-    background-size: cover;
-    color: rgb(208, 154, 219);
-    font-size: 16px;
-  }
 
 /* Estilos del botón de inicio de sesión */
 .login-button {
@@ -199,19 +195,8 @@ nav {
   p{
     text-align: center;
   }
-  
-  /* Estilos para el pie de página */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-  }
-  
-  /* Estilos personalizados para la página */
 
+  
 nav {
 	background-color: #fff5ee; /* Fondo crema */
 }
@@ -221,10 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Estilos para el pie de página */
-footer {
-	background-color: #fff5ee; /* Fondo crema */
-	color: #4d4d4d; /* Texto gris oscuro */
-}
+
 
 .help-btn {
   position: fixed;
@@ -261,3 +243,34 @@ footer {
   position: absolute;
   right: 135px;
 }
+
+.carousel-item {
+  height: 40vh;
+  width: 20vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.card-columns .card {
+  display: inline-block;
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px !important; 
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+
+

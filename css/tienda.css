@@ -10,6 +10,12 @@ margin: 0;
 padding: 0;
 }
 
+.carouselExample{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
 footer {
     background: linear-gradient(45deg, #ff7f7f, #ff66cc);
