@@ -1,0 +1,72 @@
+#map {
+    height: 500px;
+    width: 100%;
+}
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+.carouselExample{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer {
+    background: linear-gradient(45deg, #ff7f7f, #ff66cc);
+    padding: 40px 0;
+  }
+  
+  .containerfooter {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    width: 45%;
+    margin-right: 5%;
+  }
+  
+  .column:last-of-type {
+    margin-right: 0;
+  }
+  
+  .column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .column ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .column ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }

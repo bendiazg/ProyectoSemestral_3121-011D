@@ -1,0 +1,77 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row mt-5">
+        <h2>Perros</h2>
+        {% for p in cate_perro %}
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="{{p.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{p.nombre}}</h5>
+                <p class="card-text">{{p.descripcion}}</p>
+                <a href="#" class="btn btn-primary">{{p.precio}}</a>
+                <p class="stock-value" style="display: none;">{{p.stock}}</p>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-5">
+        <h2>Gatos</h2>
+        {% for p in cate_gato %}
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="{{p.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{p.nombre}}</h5>
+                <p class="card-text">{{p.descripcion}}</p>
+                <a href="#" class="btn btn-primary">{{p.precio}}</a>
+                <p class="stock-value" style="display: none;">{{p.stock}}</p> 
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<footer>
+    <div class="containerfooter">
+        <div class="contact-info">
+            <div class="column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>123 Calle Principal, Santiago</li>
+                    <li><i class="fas fa-phone"></i>(123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i>RatShop@gmail.com.com</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><i class="fab fa-twitter"></i><a href="#">@RatShop</a></li>
+                    <li><i class="fab fa-facebook"></i><a href="#">/RatShop</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="#">@RatShop</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<h1>
+
+</h1>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/carrito.js' %}"></script>
+<script src="{% static 'js/filter.js' %}"></script>
+{% endblock %}
